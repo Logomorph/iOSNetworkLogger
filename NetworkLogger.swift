@@ -14,6 +14,7 @@ class NL: NSObject {
     static func log(_ items: Any..., separator: String = " ", terminator: String = "") {
         var message = "\(Date().timeIntervalSince1970) - "
         print(items, separator: separator, terminator: terminator, to: &message)
+        print(items, separator: separator, terminator: terminator)
         NL.sendRequest(message: message)
     }
     
