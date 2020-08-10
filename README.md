@@ -15,6 +15,6 @@ npm install ip
 3. Add `NetworkLogger.swift` to you project
 ## Usage
 1. Start the server by running ```node server.js``` from the terminal
-2. Open `NetworkLogger.swift` and change `let serverIP = "127.0.0.1:8080"` to match your desired ip (make sure to include the port!)
+2. Open `NetworkLogger.swift` and change `let serverIP = "https://127.0.0.1:8080"` to match your desired ip (make sure to include the port!)
 3. Call `NL.log("message")` to log a message to the server
 4. A new entry should appear in the terminal running the server
