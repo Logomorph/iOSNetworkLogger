@@ -9,7 +9,7 @@
 import UIKit
 
 public class NL: NSObject {
-    class public var serverIP = "https://127.0.0.1:8080"
+    static public var serverIP = "https://127.0.0.1:8080"
     
     static public func log(_ items: Any..., separator: String = " ", terminator: String = "", tag: String = "") {
         var message = "\(Date().timeIntervalSince1970) - "
@@ -20,7 +20,7 @@ public class NL: NSObject {
     
     private static func sendRequest(message: String, tag: String) {
         let session = URLSession.shared
-        let url = URL(string: Self.serverIP)!
+        let url = URL(string: NL.serverIP)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = Data(message.utf8)
