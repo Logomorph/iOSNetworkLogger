@@ -8,10 +8,10 @@
 
 import UIKit
 
-let serverIP = "https://127.0.0.1:8080"
-
 public class NL: NSObject {
-    static func log(_ items: Any..., separator: String = " ", terminator: String = "", tag: String = "") {
+    class public var serverIP = "https://127.0.0.1:8080"
+    
+    static public func log(_ items: Any..., separator: String = " ", terminator: String = "", tag: String = "") {
         var message = "\(Date().timeIntervalSince1970) - "
         print(items, separator: separator, terminator: terminator, to: &message)
         print(items, separator: separator, terminator: terminator)
@@ -20,7 +20,7 @@ public class NL: NSObject {
     
     private static func sendRequest(message: String, tag: String) {
         let session = URLSession.shared
-        let url = URL(string: serverIP)!
+        let url = URL(string: Self.serverIP)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = Data(message.utf8)
