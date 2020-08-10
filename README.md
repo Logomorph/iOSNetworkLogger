@@ -14,7 +14,7 @@ npm install ip
 ```
 
 #### From source
-3. Add `NetworkLogger.swift` to you project
+3. Add `Sources/NetworkLogger/NetworkLogger.swift` to you project
 
 #### Swift package manager
 3. Add the git url as a swift package
