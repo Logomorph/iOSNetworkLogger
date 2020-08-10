@@ -8,7 +8,7 @@
 
 import UIKit
 
-let serverIP = "127.0.0.1:8080"
+let serverIP = "https://127.0.0.1:8080"
 
 class NL: NSObject {
     static func log(_ items: Any..., separator: String = " ", terminator: String = "", tag: String = "") {
@@ -20,7 +20,7 @@ class NL: NSObject {
     
     private static func sendRequest(message: String, tag: String) {
         let session = URLSession.shared
-        let url = URL(string: "http://\(serverIP)")!
+        let url = URL(string: serverIP)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = Data(message.utf8)
