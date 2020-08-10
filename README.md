@@ -21,6 +21,7 @@ npm install ip
 
 ## Usage
 1. Start the server by running ```node server.js``` from the terminal
-2. Set `NL.serverIP` to your desired IP address. The default is `https://127.0.0.1:8080`. Make sure to include the port!
-3. Call `NL.log("message")` to log a message to the server
-4. A new entry should appear in the terminal running the server
+2. If using SPM, `import NetworkLogger`
+3. Set `NL.serverIP` to your desired IP address. The default is `https://127.0.0.1:8080`. Make sure to include the port!
+4. Call `NL.log("message")` to log a message to the server
+5. A new entry should appear in the terminal running the server
