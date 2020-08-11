@@ -6,6 +6,12 @@
 //  Copyright © 2020 Alin Baciu. All rights reserved.
 //
 
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(Cocoa)
+import Cocoa
+#endif
+
 public class NL: NSObject {
     static public var serverIP = "https://127.0.0.1:8080"
     
