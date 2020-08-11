@@ -1,8 +1,8 @@
-# iOSNetworkLogger
+# NetworkLogger
 Log messages to a node.js server for debugging
 
 ## Overview
-I made this while implementing background upload and download in iOS apps, in order to easily log messages when testing background completions.
+I made this while implementing background upload and download in iOS apps, in order to easily log messages when testing background completions. Suports both `ios` and `macos`.
 
 It supports `swift` only, it can't log from Objective-C. The `log` method supports the same arguments as the `print` method, so you can log as usual.
 
