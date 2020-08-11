@@ -6,8 +6,6 @@
 //  Copyright © 2020 Alin Baciu. All rights reserved.
 //
 
-import UIKit
-
 public class NL: NSObject {
     static public var serverIP = "https://127.0.0.1:8080"
     
